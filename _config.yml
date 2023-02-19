@@ -58,9 +58,11 @@ permalink: /:title/
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
+# Added theme to webiste
+remote_theme: /Jacob-Strokus/voyager
+
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
-  theme: /Jacob-Strokus/voyager
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting

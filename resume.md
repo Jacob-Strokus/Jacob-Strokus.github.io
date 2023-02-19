@@ -7,7 +7,7 @@ published: true
 # Experience
 
 
-### Research Assistant __________________________________________________________________																	Jan 2023 - May 2023
+### Research Assistant 																	Jan 2023 - May 2023
 ### George Mason University CS Department
 
 •  Work alongside professors, academic colleagues, engineers, and product managers to facilitate the 
@@ -46,13 +46,13 @@ national security agenda
 
 ### Deep learning through Artificial Intelligence and Natural Language Processing
 
-	• K nearest Neighbors classifier’s, naïve bayes decision trees, sparse and dense forests
+• K nearest Neighbors classifier’s, naïve bayes decision trees, sparse and dense forests
     
-	• K means, K means++, Bisecting and K means unsupervised learning models 
+• K means, K means++, Bisecting and K means unsupervised learning models 
     
-	• Artificial Neural Networks, Convolutional Neural Networks
+• Artificial Neural Networks, Convolutional Neural Networks
     
-	• Feed-Forward Neural Networks, BERT Neural Networks
+• Feed-Forward Neural Networks, BERT Neural Networks
    
 ### 5g mesh networks
 

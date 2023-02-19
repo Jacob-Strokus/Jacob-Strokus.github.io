@@ -2,14 +2,28 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
 
-### More Information
+George Mason University Grad 2023 - Volgenau School of Engineering and Computing 
 
-A place to include any other types of information that you'd like to include about yourself.
+### Hackathons
+RUSECURE 2019 winner
+CyberFusion 2020 top 15
+Cyber Apocalypse 2021 placed 437 out of 4755
 
-### Contact me
+### Certifications
 
-[email@domain.com](mailto:email@domain.com)
+Microsoft Techinology Associate (MTA) certified Java 2019
+
+### Organizations
+
+"Boring CS Club" President - Virginia Western Community College 2018-2020
+Patriot Protection Club ambassador - George Mason University 2021
+Patriot Hack Club member - George Mason University 2020-2023
+Patriot Blockchain Club member - George Mason University 2020-2023
+Porchetta Industries consultant - 2020-2023
+Red Team Village affiliate - 2020-2023
+
+[admin@Jstroku.email.com](mailto:jasstrokus8@gmail.com)

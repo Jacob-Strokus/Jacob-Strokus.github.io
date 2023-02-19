@@ -7,8 +7,7 @@ published: true
 # Experience
 
 
-### Research Assistant 																	Jan 2023 - May 2023
-### George Mason University CS Department
+### Research Assistant	George Mason University CS Department							Jan 2023 - May 2023
 
 •  Work alongside professors, academic colleagues, engineers, and product managers to facilitate the 
 implementation of 5g mobile defense platforms in mesh networks.
@@ -18,8 +17,7 @@ constraints with engineering team
 
 • Articulated product design and execution in peer-reviewed academic journal
 
-### Software Engineer Intern															June 2022 - Aug 2022
-### Black Horse Solutions, A Parson's Company
+### Software Engineer Intern	Black Horse Solutions, A Parson's Company		June 2022 - Aug 2022
 
 • Leveraged solid skills in Object-Oriented Programming and extensive knowledge of Version Control Systems to exceed expectations and deadlines
 
@@ -30,8 +28,7 @@ constraints with engineering team
 • Operational testing executed for tools developed\
 
 
-### Software Engineer Intern															June 2021 - Aug 2021
-### Black Horse Solutions Inc.
+### Software Engineer Intern	Black Horse Solutions Inc.								June 2021 - Aug 2021
 
 • Worked within the National Security space to design, execute, implement, and deploy cyber tools to aid the 
 national security agenda
@@ -58,5 +55,4 @@ national security agenda
 
 ### zero trust policy 
 
-### cryptography 
-
+### cryptography

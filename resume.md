@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Resume
+title: ''
 permalink: /resume/
 published: true
 ---
 # Experience
 
 
-### Research Assistant																	Jan 2023 - May 2023
+### Research Assistant __________________________________________________________________																	Jan 2023 - May 2023
 ### George Mason University CS Department
 
 •  Work alongside professors, academic colleagues, engineers, and product managers to facilitate the 

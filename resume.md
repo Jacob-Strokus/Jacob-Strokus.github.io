@@ -51,8 +51,27 @@ national security agenda
     
 • Feed-Forward Neural Networks, BERT Neural Networks
    
-### 5g mesh networks
+### 5g Mesh Networks
 
-### zero trust policy 
+• As more intelligence is placed at the edge of networks, these connections rely less on centralized hubs, which is becoming more and more ineffective as a primary means to connectivity. Edge points are now interleaved to connect to one another, as well as the centralized hub(s) (like a spider's web)
 
-### cryptography
+• Within these networks we instantiate group policy where each member(node/connection/etc) of a designated group holds identification attributes specific to their policy
+
+• Addtional security through appending keyed nonce to packets allows to prevent various means of attack:
+	- Replay Attacks
+    - Network Discovery Attacks
+    - Resource Comsuption Attacks
+	- Replayed Flooding Attacks
+    
+• I will break these topics down in a later blog post about 5g mesh network protocols, attacks, and security
+
+### Zero Trust Policy 
+
+### Cryptography
+• while in college I took an intro to cryptography course, and a secure programming course. Both of which were complex and interesting. The basis of good cryptographic systems is the underlying mathematical structures which, up until quantum becomes feasible, remain unbreakable to our polynomial time bound adversaries
+
+• Secret Key Encryption, Public Key Encryption, Public Key Infrastructure, Key Exchange, and Cryptographic Hash Functions were the meat of these courses
+
+• There is a lot of buzz around security and applied cryptanalysis surrounding block chain development which is where my research will take me
+
+### Malware analysis 

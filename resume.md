@@ -58,10 +58,13 @@ national security agenda
 • Within these networks we instantiate group policy where each member(node/connection/etc) of a designated group holds identification attributes specific to their policy
 
 • Addtional security through appending keyed nonce to packets allows to prevent various means of attack:
-	- Replay Attacks
+	- Replay Attacks 
+    
     - Network Discovery Attacks
+    
     - Resource Comsuption Attacks
-	- Replayed Flooding Attacks
+	
+    - Replayed Flooding Attacks
     
 • I will break these topics down in a later blog post about 5g mesh network protocols, attacks, and security
 

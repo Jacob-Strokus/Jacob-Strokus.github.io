@@ -15,7 +15,8 @@ implementation of 5g mobile defense platforms in mesh networks.
 • Communicated system design improvements including code complexity, time and space complexity, and 
 constraints with engineering team
 
-• Articulated product design and execution in peer-reviewed academic journal
+• Articulated product design and performed research that is published in IEEE paper.
+
 
 ### Software Engineer Intern	Black Horse Solutions, A Parson's Company		June 2022 - Aug 2022
 

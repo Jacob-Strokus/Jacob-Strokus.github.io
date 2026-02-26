@@ -1,27 +1,79 @@
+// === COLOR PALETTE ===
+$bg-primary: #0a0a0f;
+$bg-secondary: #111118;
+$bg-card: #16161f;
+$bg-card-hover: #1c1c28;
 
-//
-// VARIABLES
-//
+$accent-cyan: #00d4ff;
+$accent-purple: #7c3aed;
+$accent-pink: #ec4899;
 
-// Colors
-$blue: #4183C4;
+$text-primary: #e4e4e7;
+$text-secondary: #a1a1aa;
+$text-muted: #71717a;
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+$border-color: rgba(255, 255, 255, 0.06);
+$border-glow: rgba(0, 212, 255, 0.15);
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+// === FONTS ===
+$font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-heading: 'Space Grotesk', 'Inter', sans-serif;
+$font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
-// Mobile breakpoints
+// === GRADIENTS ===
+$gradient-accent: linear-gradient(135deg, $accent-cyan, $accent-purple);
+$gradient-text: linear-gradient(135deg, $accent-cyan 0%, $accent-purple 50%, $accent-pink 100%);
+
+// === SPACING ===
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 3rem;
+$spacing-3xl: 4rem;
+$spacing-4xl: 6rem;
+
+// === BORDER RADIUS ===
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 24px;
+$radius-full: 9999px;
+
+// === SHADOWS ===
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+$shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+$shadow-glow-cyan: 0 0 20px rgba($accent-cyan, 0.15);
+$shadow-glow-purple: 0 0 20px rgba($accent-purple, 0.15);
+
+// === TRANSITIONS ===
+$transition-fast: 0.15s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;
+$transition-spring: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+// === BREAKPOINTS ===
+$bp-mobile: 640px;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+$bp-wide: 1280px;
+
 @mixin mobile {
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: $bp-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $bp-desktop) {
     @content;
   }
 }

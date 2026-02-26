@@ -1,18 +1,172 @@
 ---
 layout: default
+title: Home
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero__orbs">
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__orb hero__orb--3"></div>
+  </div>
+  <div class="hero__content">
+    <p class="hero__greeting">Hi, I'm</p>
+    <h1 class="hero__name">Jacob <span class="gradient-text">Strokus</span></h1>
+    <div class="hero__typing-wrapper">
+      <span class="hero__typing" data-texts='["Software Engineer @ Microsoft","Cyber Operations Specialist","AI/ML Researcher","Open Source Builder"]'>&nbsp;</span>
+      <span class="hero__cursor">|</span>
+    </div>
+    <p class="hero__bio">
+      I build things at the intersection of security, intelligence, and emerging technology. 
+      From quantum-inspired protocols to real-time global monitoring systems — I put a piece 
+      of myself into everything I create.
+    </p>
+    <div class="hero__actions">
+      <a href="{{ site.baseurl }}/projects" class="btn btn--primary">
+        <span>View Projects</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+      <a href="{{ site.baseurl }}/about" class="btn btn--secondary">About Me</a>
+    </div>
+  </div>
+  <div class="hero__scroll-indicator">
+    <span>Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<!-- Featured Section -->
+<section class="section" id="featured">
+  <div class="container">
+    <div class="section__header reveal">
+      <span class="section__label">What I Do</span>
+      <h2 class="section__title">Engineering at the <span class="gradient-text">Edge</span></h2>
+      <p class="section__subtitle">Exploring the frontiers of software, security, and artificial intelligence</p>
+    </div>
 
-      <div class="entry">
-        {{ post.excerpt }}
+    <div class="feature-grid stagger-children">
+      <div class="feature-card reveal">
+        <div class="feature-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <h3 class="feature-card__title">Cyber Operations</h3>
+        <p class="feature-card__text">Implant & exploit development, vulnerability research, offensive security tooling, and zero trust architecture.</p>
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+      <div class="feature-card reveal">
+        <div class="feature-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"></circle><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
+        </div>
+        <h3 class="feature-card__title">AI & Machine Learning</h3>
+        <p class="feature-card__text">Neural networks, evolutionary algorithms, NLP, and deep learning applied to real-world intelligence systems.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        </div>
+        <h3 class="feature-card__title">Systems Engineering</h3>
+        <p class="feature-card__text">Distributed systems, 5G mesh networks, real-time data pipelines, and architecture-independent tooling.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-card__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+        </div>
+        <h3 class="feature-card__title">Full Stack Dev</h3>
+        <p class="feature-card__text">From Rust exploits to TypeScript dashboards — building production-grade software across the entire stack.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Highlighted Projects -->
+<section class="section section--alt" id="highlights">
+  <div class="container">
+    <div class="section__header reveal">
+      <span class="section__label">Featured Work</span>
+      <h2 class="section__title">Recent <span class="gradient-text">Projects</span></h2>
+    </div>
+
+    <div class="project-showcase stagger-children">
+      <a href="https://github.com/Jacob-Strokus/Entanglement-Transfer-Protocol" target="_blank" rel="noopener" class="showcase-card card--tilt reveal">
+        <div class="showcase-card__header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span class="showcase-card__tag">Python</span>
+        </div>
+        <h3 class="showcase-card__title">Entanglement Transfer Protocol</h3>
+        <p class="showcase-card__desc">What if data is never "moved" at all? A quantum-inspired protocol that reframes traditional data transfer by eliminating the problems of distance, latency, and trust.</p>
+        <div class="showcase-card__footer">
+          <span class="showcase-card__link">View on GitHub →</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/Jacob-Strokus/worldmonitor" target="_blank" rel="noopener" class="showcase-card card--tilt reveal">
+        <div class="showcase-card__header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span class="showcase-card__tag">TypeScript</span>
+        </div>
+        <h3 class="showcase-card__title">WorldMonitor</h3>
+        <p class="showcase-card__desc">Real-time global intelligence dashboard — AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface.</p>
+        <div class="showcase-card__footer">
+          <span class="showcase-card__link">View on GitHub →</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/Jacob-Strokus/evolution_arena" target="_blank" rel="noopener" class="showcase-card card--tilt reveal">
+        <div class="showcase-card__header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+          <span class="showcase-card__tag">Python</span>
+        </div>
+        <h3 class="showcase-card__title">Evolution Arena</h3>
+        <p class="showcase-card__desc">Evolutionary simulation environment where digital organisms compete, adapt, and evolve through natural selection algorithms and neural network controllers.</p>
+        <div class="showcase-card__footer">
+          <span class="showcase-card__link">View on GitHub →</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="section__cta reveal">
+      <a href="{{ site.baseurl }}/projects" class="btn btn--secondary">View All Projects →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="section" id="stats">
+  <div class="container">
+    <div class="stats-grid stagger-children">
+      <div class="stat-card reveal">
+        <span class="stat-card__number counter" data-count="16" data-suffix="+">0+</span>
+        <span class="stat-card__label">Public Repos</span>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-card__number counter" data-count="7" data-suffix="+">0+</span>
+        <span class="stat-card__label">Languages</span>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-card__number counter" data-count="3" data-suffix="+">0+</span>
+        <span class="stat-card__label">Years Pro</span>
+      </div>
+      <div class="stat-card reveal">
+        <span class="stat-card__number counter" data-count="1" data-suffix="">1</span>
+        <span class="stat-card__label">IEEE Paper</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-card reveal">
+      <h2 class="cta-card__title">Let's Build Something <span class="gradient-text">Together</span></h2>
+      <p class="cta-card__text">Whether it's open source collaboration, research, or just a good conversation about tech — I'm always interested.</p>
+      <div class="cta-card__actions">
+        <a href="mailto:jasstrokus8@gmail.com" class="btn btn--primary">Get In Touch</a>
+        <a href="https://www.linkedin.com/in/jacob-strokus/" target="_blank" rel="noopener" class="btn btn--secondary">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -4,7 +4,7 @@ title: Who I am!
 published: true
 ---
 
-Hi. I’m Jacob Strokus. I’m a software engineer from Northern Virginia.
+Hi. I'm Jas Strokus. I'm a software engineer from Northern Virginia.
 
 I’ve spent most of my career building software. My focus has largely been on implant and exploit development, offensive cyber operations, vulnerability research in hostile markets, and zero trust policy. In addition to these attributes, I have extensive study of data structures and algorithms, real-time distributed system design and implementation, 5g mesh networking, cryptography and secure programming, and low-level development.
 

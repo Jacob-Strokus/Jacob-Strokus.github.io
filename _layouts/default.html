@@ -18,12 +18,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/favicon.svg">
+
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml">
   </head>
 
   <body>
+    <!-- Skip to content (accessibility) -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
     <!-- Animated background particles -->
     <div class="bg-particles" aria-hidden="true">
       <div class="particle"></div>
@@ -59,9 +69,14 @@
     </nav>
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
       {{ content }}
     </main>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
 
     <!-- Footer -->
     <footer class="footer">
@@ -239,6 +254,27 @@
       }, { threshold: 0.5 });
 
       document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+      // Scroll progress bar
+      window.addEventListener('scroll', () => {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        document.getElementById('scrollProgress').style.width = progress + '%';
+      });
+
+      // Back to top button
+      const backToTop = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 600) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
 
       // Tilt effect on project cards
       document.querySelectorAll('.card--tilt').forEach(card => {

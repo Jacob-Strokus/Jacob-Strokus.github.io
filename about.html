@@ -54,52 +54,271 @@ permalink: /about/
       <h2 class="section__title">What I <span class="gradient-text">Do</span></h2>
     </div>
 
-    <div class="tech-grid stagger-children">
-      <div class="tech-item reveal">
-        <span class="tech-item__name">Site Reliability Engineering</span>
+    <!-- Interactive Tech Constellation -->
+    <div class="tech-constellation reveal" id="techConstellation">
+      <canvas class="tech-constellation__canvas" id="techCanvas"></canvas>
+      <div class="tech-constellation__nodes" id="techNodes">
+        <div class="tech-node tech-node--core" data-category="core" style="--angle: 0deg; --radius: 0;">
+          <span class="tech-node__label">Jas</span>
+        </div>
+
+        <!-- Languages ring -->
+        <div class="tech-node tech-node--lang" data-category="lang" data-index="0" data-ring="1">
+          <span class="tech-node__icon">🐍</span>
+          <span class="tech-node__label">Python</span>
+        </div>
+        <div class="tech-node tech-node--lang" data-category="lang" data-index="1" data-ring="1">
+          <span class="tech-node__icon">🦀</span>
+          <span class="tech-node__label">Rust</span>
+        </div>
+        <div class="tech-node tech-node--lang" data-category="lang" data-index="2" data-ring="1">
+          <span class="tech-node__icon">⚡</span>
+          <span class="tech-node__label">Go</span>
+        </div>
+        <div class="tech-node tech-node--lang" data-category="lang" data-index="3" data-ring="1">
+          <span class="tech-node__icon">☕</span>
+          <span class="tech-node__label">Java</span>
+        </div>
+        <div class="tech-node tech-node--lang" data-category="lang" data-index="4" data-ring="1">
+          <span class="tech-node__icon">⚙️</span>
+          <span class="tech-node__label">C / C++</span>
+        </div>
+
+        <!-- Domains ring -->
+        <div class="tech-node tech-node--domain" data-category="domain" data-index="0" data-ring="2">
+          <span class="tech-node__icon">🛡️</span>
+          <span class="tech-node__label">SRE</span>
+        </div>
+        <div class="tech-node tech-node--domain" data-category="domain" data-index="1" data-ring="2">
+          <span class="tech-node__icon">🤖</span>
+          <span class="tech-node__label">AI/ML</span>
+        </div>
+        <div class="tech-node tech-node--domain" data-category="domain" data-index="2" data-ring="2">
+          <span class="tech-node__icon">🔓</span>
+          <span class="tech-node__label">Offensive Cyber</span>
+        </div>
+        <div class="tech-node tech-node--domain" data-category="domain" data-index="3" data-ring="2">
+          <span class="tech-node__icon">🏗️</span>
+          <span class="tech-node__label">Infra Automation</span>
+        </div>
+        <div class="tech-node tech-node--domain" data-category="domain" data-index="4" data-ring="2">
+          <span class="tech-node__icon">🔐</span>
+          <span class="tech-node__label">Security Eng</span>
+        </div>
+        <div class="tech-node tech-node--domain" data-category="domain" data-index="5" data-ring="2">
+          <span class="tech-node__icon">🌐</span>
+          <span class="tech-node__label">Distributed Sys</span>
+        </div>
+
+        <!-- Tools ring -->
+        <div class="tech-node tech-node--tool" data-category="tool" data-index="0" data-ring="3">
+          <span class="tech-node__icon">🐳</span>
+          <span class="tech-node__label">Docker</span>
+        </div>
+        <div class="tech-node tech-node--tool" data-category="tool" data-index="1" data-ring="3">
+          <span class="tech-node__icon">☸️</span>
+          <span class="tech-node__label">K8s</span>
+        </div>
+        <div class="tech-node tech-node--tool" data-category="tool" data-index="2" data-ring="3">
+          <span class="tech-node__icon">☁️</span>
+          <span class="tech-node__label">AWS</span>
+        </div>
+        <div class="tech-node tech-node--tool" data-category="tool" data-index="3" data-ring="3">
+          <span class="tech-node__icon">☁️</span>
+          <span class="tech-node__label">GCP</span>
+        </div>
       </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">Infrastructure Automation</span>
-      </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">AI/ML &amp; Distributed Systems</span>
-      </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">Python</span>
-      </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">Rust</span>
-      </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">Go</span>
-      </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">Java</span>
-      </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">C / C++</span>
-      </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">AWS</span>
-      </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">GCP</span>
-      </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">Docker</span>
-      </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">Kubernetes</span>
-      </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">Offensive Cyber Ops</span>
-      </div>
-      <div class="tech-item reveal">
-        <span class="tech-item__name">Security Engineering</span>
-      </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="tech-legend reveal">
+      <span class="tech-legend__item"><span class="tech-legend__dot tech-legend__dot--lang"></span>Languages</span>
+      <span class="tech-legend__item"><span class="tech-legend__dot tech-legend__dot--domain"></span>Domains</span>
+      <span class="tech-legend__item"><span class="tech-legend__dot tech-legend__dot--tool"></span>Tools</span>
     </div>
   </div>
 </section>
+
+<!-- Tech Constellation Script -->
+<script>
+(function() {
+  const container = document.getElementById('techConstellation');
+  const canvas = document.getElementById('techCanvas');
+  const ctx = canvas.getContext('2d');
+  const nodes = document.querySelectorAll('.tech-node');
+  let width, height, centerX, centerY;
+  let mouseX = 0, mouseY = 0;
+  let animationId;
+  let time = 0;
+
+  // Ring radii (responsive)
+  function getRingRadii() {
+    const base = Math.min(width, height) * 0.42;
+    return [0, base * 0.35, base * 0.65, base * 0.92];
+  }
+
+  function resize() {
+    const rect = container.getBoundingClientRect();
+    width = rect.width;
+    height = Math.max(500, Math.min(600, width * 0.75));
+    container.style.height = height + 'px';
+    canvas.width = width * window.devicePixelRatio;
+    canvas.height = height * window.devicePixelRatio;
+    canvas.style.width = width + 'px';
+    canvas.style.height = height + 'px';
+    ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+    centerX = width / 2;
+    centerY = height / 2;
+    positionNodes();
+  }
+
+  function getNodePosition(node) {
+    const ring = parseInt(node.dataset.ring || 0);
+    const radii = getRingRadii();
+    if (ring === 0) return { x: centerX, y: centerY };
+
+    const siblings = document.querySelectorAll('[data-ring="' + ring + '"]');
+    const index = parseInt(node.dataset.index || 0);
+    const count = siblings.length;
+    const angleStep = (Math.PI * 2) / count;
+    // Offset each ring so nodes don't align
+    const offset = ring * 0.4;
+    const angle = angleStep * index + offset + time * (0.15 / ring);
+
+    // Mouse repulsion
+    const baseX = centerX + Math.cos(angle) * radii[ring];
+    const baseY = centerY + Math.sin(angle) * radii[ring];
+    const dx = baseX - mouseX;
+    const dy = baseY - mouseY;
+    const dist = Math.sqrt(dx * dx + dy * dy);
+    const repulse = Math.max(0, 1 - dist / 150) * 20;
+    const rx = dist > 0 ? (dx / dist) * repulse : 0;
+    const ry = dist > 0 ? (dy / dist) * repulse : 0;
+
+    return { x: baseX + rx, y: baseY + ry, angle };
+  }
+
+  function positionNodes() {
+    nodes.forEach(node => {
+      const pos = getNodePosition(node);
+      node.style.left = pos.x + 'px';
+      node.style.top = pos.y + 'px';
+    });
+  }
+
+  function drawConnections() {
+    ctx.clearRect(0, 0, width, height);
+
+    // Draw orbit rings
+    const radii = getRingRadii();
+    for (let i = 1; i < radii.length; i++) {
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, radii[i], 0, Math.PI * 2);
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.03)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    }
+
+    // Draw connections from center to ring 1
+    const corePos = { x: centerX, y: centerY };
+    const ring1 = document.querySelectorAll('[data-ring="1"]');
+    ring1.forEach(node => {
+      const pos = getNodePosition(node);
+      drawLine(corePos, pos, 'rgba(0, 212, 255, 0.12)');
+    });
+
+    // Draw connections from ring 1 to ring 2 (nearest neighbors)
+    const ring2 = document.querySelectorAll('[data-ring="2"]');
+    ring1.forEach(n1 => {
+      const p1 = getNodePosition(n1);
+      ring2.forEach(n2 => {
+        const p2 = getNodePosition(n2);
+        const d = Math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2);
+        const maxDist = getRingRadii()[2] * 0.8;
+        if (d < maxDist) {
+          const alpha = (1 - d / maxDist) * 0.1;
+          drawLine(p1, p2, 'rgba(124, 58, 237, ' + alpha + ')');
+        }
+      });
+    });
+
+    // Draw connections from ring 2 to ring 3 (nearest neighbors)
+    const ring3 = document.querySelectorAll('[data-ring="3"]');
+    ring2.forEach(n2 => {
+      const p2 = getNodePosition(n2);
+      ring3.forEach(n3 => {
+        const p3 = getNodePosition(n3);
+        const d = Math.sqrt((p2.x - p3.x) ** 2 + (p2.y - p3.y) ** 2);
+        const maxDist = getRingRadii()[3] * 0.6;
+        if (d < maxDist) {
+          const alpha = (1 - d / maxDist) * 0.08;
+          drawLine(p2, p3, 'rgba(236, 72, 153, ' + alpha + ')');
+        }
+      });
+    });
+  }
+
+  function drawLine(from, to, color) {
+    ctx.beginPath();
+    ctx.moveTo(from.x, from.y);
+    ctx.lineTo(to.x, to.y);
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  function animate() {
+    time += 0.008;
+    positionNodes();
+    // Reset canvas scale each frame
+    ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
+    drawConnections();
+    animationId = requestAnimationFrame(animate);
+  }
+
+  // Mouse tracking
+  container.addEventListener('mousemove', (e) => {
+    const rect = container.getBoundingClientRect();
+    mouseX = e.clientX - rect.left;
+    mouseY = e.clientY - rect.top;
+  });
+
+  container.addEventListener('mouseleave', () => {
+    mouseX = -1000;
+    mouseY = -1000;
+  });
+
+  // Node hover effect
+  nodes.forEach(node => {
+    node.addEventListener('mouseenter', () => {
+      node.classList.add('tech-node--active');
+    });
+    node.addEventListener('mouseleave', () => {
+      node.classList.remove('tech-node--active');
+    });
+  });
+
+  // Init
+  const constellationObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        resize();
+        animate();
+        constellationObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  window.addEventListener('resize', () => {
+    if (animationId) {
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      resize();
+    }
+  });
+
+  constellationObserver.observe(container);
+})();
+</script>
 
 <!-- Achievements -->
 <section class="section">
